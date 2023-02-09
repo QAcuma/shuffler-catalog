@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "ru.acuma"
-version = "2.0.1"
+version = "2.0.2"
 
 repositories {
     mavenLocal()
@@ -15,7 +15,8 @@ repositories {
 
 catalog {
     versionCatalog {
-        version("spring-boot", "2.7.3")
+        version("spring-boot-old", "2.7.8")
+        version("spring-boot", "3.0.2")
         version("postgresql", "42.3.4")
         version("flyway", "8.5.10")
         version("jooq", "3.16.6")
@@ -66,8 +67,18 @@ catalog {
 }
 
 publishing {
+    repositories {
+        maven {
+            name = "shuffler-catalog"
+            url = uri("https://maven.pkg.github.com/QAcuma/shuffler-catalog")
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
     publications {
-        create<MavenPublication>("shuffler-catalog") {
+        create<MavenPublication>("github") {
             artifactId = "shuffler-catalog"
             from(components["versionCatalog"])
         }

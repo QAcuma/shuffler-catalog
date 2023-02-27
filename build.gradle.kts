@@ -70,7 +70,7 @@ publishing {
     repositories {
         maven {
             name = "shuffler-catalog"
-            url = uri("https://maven.pkg.github.com/QAcuma/shuffler-catalog")
+            url = uri("https://maven.pkg.github.com/QAcuma")
             credentials {
                 username = System.getenv("GITHUB_USERNAME")
                 password = System.getenv("GITHUB_TOKEN")

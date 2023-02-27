@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "ru.acuma"
-version = "2.0.2"
+version = "2.0.3"
 
 repositories {
     mavenLocal()
@@ -16,11 +16,11 @@ repositories {
 catalog {
     versionCatalog {
         version("spring-boot-old", "2.7.8")
-        version("spring-boot", "3.0.2")
-        version("postgresql", "42.3.4")
+        version("spring-boot", "3.0.3")
+        version("postgresql", "42.5.4")
         version("flyway", "8.5.10")
-        version("jooq", "3.16.6")
-        version("lombok", "1.18.24")
+        version("jooq", "3.17.8")
+        version("lombok", "1.18.26")
         version("telegrambots", "6.0.1")
         version("junit", "5.8.2")
         version("mockito", "4.5.1")
@@ -78,7 +78,7 @@ publishing {
         }
     }
     publications {
-        create<MavenPublication>("github") {
+        create<MavenPublication>("shuffler-catalog") {
             artifactId = "shuffler-catalog"
             from(components["versionCatalog"])
         }

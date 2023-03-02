@@ -29,19 +29,23 @@ catalog {
         version("markdown", "1.3.2")
         version("mapstruct", "1.5.3.Final")
         version("mapstruct-lombok", "0.2.0")
+        version("cache2k", "2.6.1.Final")
 
         plugin("springframework", "org.springframework.boot").versionRef("spring-boot")
+        plugin("flyway", "org.flywaydb.flyway").versionRef("flyway")
 
         library("spring-starter", "org.springframework.boot", "spring-boot-starter").versionRef("spring-boot")
         library("spring-web", "org.springframework.boot", "spring-boot-starter-web").versionRef("spring-boot")
         library("spring-test", "org.springframework.boot", "spring-boot-starter-test").versionRef("spring-boot")
         library("spring-security", "org.springframework.boot", "spring-boot-starter-security").versionRef("spring-boot")
         library("spring-aop", "org.springframework.boot", "spring-boot-starter-aop").versionRef("spring-boot")
+        library("spring-redis", "org.springframework.boot", "spring-boot-starter-data-redis").versionRef("spring-boot")
 
         library("telegrambots", "org.telegram", "telegrambots").versionRef("telegrambots")
         library("telegrambotsextensions", "org.telegram", "telegrambotsextensions").versionRef("telegrambots")
 
         library("spring-jooq", "org.springframework.boot", "spring-boot-starter-jooq").versionRef("spring-boot")
+        library("spring-data-jpa", "org.springframework.boot", "spring-boot-starter-data-jpa").versionRef("spring-boot")
         library("postgresql", "org.postgresql", "postgresql").versionRef("postgresql")
         library("flyway", "org.flywaydb", "flyway-core").versionRef("flyway")
         library("jooq", "org.jooq", "jooq").versionRef("jooq")
@@ -51,6 +55,9 @@ catalog {
         library("junit", "org.junit.jupiter", "junit-jupiter-engine").versionRef("lombok")
         library("mockito", "org.mockito", "mockito-core").versionRef("mockito")
 
+        library("cache2k-api", "org.cache2k", "cache2k-api").versionRef("cache2k")
+        library("cache2k-core", "org.cache2k", "cache2k-core").versionRef("cache2k")
+        library("cache2k-spring", "org.cache2k", "cache2k-spring").versionRef("cache2k")
         library("mapstruct", "org.mapstruct", "mapstruct").versionRef("mapstruct")
         library("mapstruct-processor", "org.mapstruct", "mapstruct-processor").versionRef("mapstruct")
         library("mapstruct-lombok", "org.projectlombok", "lombok-mapstruct-binding").versionRef("mapstruct-lombok")
@@ -63,6 +70,7 @@ catalog {
         bundle("lombok", listOf("lombok"))
         bundle("telegram", listOf("telegrambots", "telegrambotsextensions"))
         bundle("test", listOf("spring-test", "junit", "mockito"))
+        bundle("cache2k", listOf("cache2k-api", "cache2k-core", "cache2k-spring"))
     }
 }
 

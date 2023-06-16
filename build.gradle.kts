@@ -66,7 +66,7 @@ catalog {
         library("lang3", "org.apache.commons", "commons-lang3").versionRef("lang3")
         library("markdown", "com.github.Steppschuh", "Java-Markdown-Generator").versionRef("markdown")
 
-        bundle("data", listOf("postgresql", "flyway", "hibernate-ehcache"))
+        bundle("data", listOf("postgresql", "flyway"))
         bundle("util", listOf("gson", "lang3", "markdown"))
         bundle("lombok", listOf("lombok"))
         bundle("telegram", listOf("telegrambots", "telegrambotsextensions"))

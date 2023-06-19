@@ -50,7 +50,7 @@ catalog {
         library("spring-data-jpa", "org.springframework.boot", "spring-boot-starter-data-jpa").versionRef("spring-boot")
         library("postgresql", "org.postgresql", "postgresql").versionRef("postgresql")
         library("flyway", "org.flywaydb", "flyway-core").versionRef("flyway")
-        library("hibernate-ehcache", "org.hibernate", "hibernate-ehcache").versionRef("hibernate")
+        library("hibernate-jcache", "org.hibernate.orm", "hibernate-jcache").versionRef("hibernate")
 
         library("lombok", "org.projectlombok", "lombok").versionRef("lombok")
 
@@ -59,6 +59,7 @@ catalog {
         library("mockito", "org.mockito", "mockito-core").versionRef("mockito")
 
         library("caffeine", "com.github.ben-manes.caffeine", "caffeine").versionRef("caffeine")
+        library("caffeine-jcache", "com.github.ben-manes.caffeine", "jcache").versionRef("caffeine")
         library("mapstruct", "org.mapstruct", "mapstruct").versionRef("mapstruct")
         library("mapstruct-processor", "org.mapstruct", "mapstruct-processor").versionRef("mapstruct")
         library("mapstruct-lombok", "org.projectlombok", "lombok-mapstruct-binding").versionRef("mapstruct-lombok")

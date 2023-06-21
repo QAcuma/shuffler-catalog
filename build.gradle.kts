@@ -46,7 +46,6 @@ catalog {
         library("telegrambots", "org.telegram", "telegrambots").versionRef("telegrambots")
         library("telegrambotsextensions", "org.telegram", "telegrambotsextensions").versionRef("telegrambots")
 
-        library("spring-jooq", "org.springframework.boot", "spring-boot-starter-jooq").versionRef("spring-boot")
         library("spring-data-jpa", "org.springframework.boot", "spring-boot-starter-data-jpa").versionRef("spring-boot")
         library("postgresql", "org.postgresql", "postgresql").versionRef("postgresql")
         library("flyway", "org.flywaydb", "flyway-core").versionRef("flyway")

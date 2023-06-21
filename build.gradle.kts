@@ -80,7 +80,7 @@ publishing {
             name = "shuffler-catalog"
             url = uri("https://maven.pkg.github.com/QAcuma/shuffler-catalog")
             credentials {
-                username = System.getenv("GITHUB_USERNAME")
+                username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
             }
         }

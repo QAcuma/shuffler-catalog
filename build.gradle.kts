@@ -16,12 +16,12 @@ repositories {
 catalog {
     versionCatalog {
         version("spring-boot-old", "2.7.8")
-        version("spring-boot", "3.1.0")
+        version("spring-boot", "3.1.8")
         version("postgresql", "42.6.0")
         version("hibernate", "6.2.5.Final")
         version("flyway", "9.19.4")
         version("jooq", "3.17.8")
-        version("lombok", "1.18.28")
+        version("lombok", "1.18.30")
         version("telegrambots", "6.7.0")
         version("junit", "5.9.3")
         version("assertj", "3.24.2")

@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "ru.acuma"
-version = "2.0.6"
+version = "2.0.7"
 
 repositories {
     mavenLocal()
@@ -32,6 +32,7 @@ catalog {
         version("mapstruct", "1.5.5.Final")
         version("mapstruct-lombok", "0.2.0")
         version("caffeine", "3.1.6")
+        version("okhttp", "4.11.0")
 
         plugin("springframework", "org.springframework.boot").versionRef("spring-boot")
         plugin("flyway", "org.flywaydb.flyway").versionRef("flyway")
@@ -56,6 +57,7 @@ catalog {
         library("junit", "org.junit.jupiter", "junit-jupiter-engine").versionRef("junit")
         library("assertj", "org.assertj", "assertj-core").versionRef("assertj")
         library("mockito", "org.mockito", "mockito-core").versionRef("mockito")
+        library("okhttp", "com.squareup.okhttp3", "okhttp").versionRef("okhttp")
 
         library("caffeine", "com.github.ben-manes.caffeine", "caffeine").versionRef("caffeine")
         library("caffeine-jcache", "com.github.ben-manes.caffeine", "jcache").versionRef("caffeine")
